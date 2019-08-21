@@ -1,0 +1,113 @@
+<app-bread-crumb [crumbObject]="{title: 'menu', parentRoute: '/', parentTitle: 'home'}"></app-bread-crumb>
+<section class="food__menu__grid__area section-padding--lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="grid__show d-flex justify-content-between align-items-center">
+          <div class="grid__show__item">
+            <p>Showing {{(config.currentPage - 1) * config.itemsPerPage + 1}}-{{config.currentPage * config.itemsPerPage }} of {{menu.length}} Result </p>
+          </div>
+<!--          <div class="grid__show__btn">-->
+<!--            <a class="food__btn" href="#">Default Sorting</a>-->
+<!--          </div>-->
+        </div>
+      </div>
+    </div>
+    <div class="row mt--30">
+      <div class="col-lg-4 col-sm-12 col-md-6" *ngFor="let item of menu | paginate: config; let i = index">
+        <div class="menu__grid__item wow fadeInLeft" *ngIf="i%3 == 0">
+          <div class="menu__grid__thumb">
+            <a routerLink="/menu/{{item.id}}">
+              <img src="{{item.imageUrl}}" alt="grid item images">
+            </a>
+            <div class="grid__item__offer" *ngIf="item.isSpecial">
+              <span>Special</span>
+              <span>Offer</span>
+            </div>
+          </div>
+          <div class="menu__grid__inner">
+            <div class="menu__grid__details">
+              <h2><a routerLink="/menu/{{item.id}}">{{item.title}}</a></h2>
+              <ul class="grid__prize__list">
+                <li class="old__prize">${{item.oldPrice}}</li>
+                <li>${{item.price}}</li>
+              </ul>
+              <p>{{item.description}}</p>
+            </div>
+            <div class="grid__addto__cart__btn">
+              <a (click)="addToCart($event, item)">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu__grid__item wow fadeInUp" *ngIf="i%3 == 1">
+          <div class="menu__grid__thumb">
+            <a routerLink="/menu/{{item.id}}">
+              <img src="{{item.imageUrl}}" alt="grid item images">
+            </a>
+            <div class="grid__item__offer" *ngIf="item.isSpecial">
+              <span>Special</span>
+              <span>Offer</span>
+            </div>
+          </div>
+          <div class="menu__grid__inner">
+            <div class="menu__grid__details">
+              <h2><a routerLink="/menu/{{item.id}}">{{item.title}}</a></h2>
+              <ul class="grid__prize__list">
+                <li class="old__prize">${{item.oldPrice}}</li>
+                <li>${{item.price}}</li>
+              </ul>
+              <p>{{item.description}}</p>
+            </div>
+            <div class="grid__addto__cart__btn">
+              <a (click)="addToCart($event, item)">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu__grid__item wow fadeInRight" *ngIf="i%3 == 2">
+          <div class="menu__grid__thumb">
+            <a routerLink="/menu/{{item.id}}">
+              <img src="{{item.imageUrl}}" alt="grid item images">
+            </a>
+            <div class="grid__item__offer" *ngIf="item.isSpecial">
+              <span>Special</span>
+              <span>Offer</span>
+            </div>
+          </div>
+          <div class="menu__grid__inner">
+            <div class="menu__grid__details">
+              <h2><a routerLink="/menu/{{item.id}}">{{item.title}}</a></h2>
+              <ul class="grid__prize__list">
+                <li class="old__prize">${{item.oldPrice}}</li>
+                <li>${{item.price}}</li>
+              </ul>
+              <p>{{item.description}}</p>
+            </div>
+            <div class="grid__addto__cart__btn">
+              <a (click)="addToCart($event, item)">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <pagination-template #p="paginationApi"
+                             [id]="config.id"
+                             (pageChange)="config.currentPage = $event">
+          <ul class="food__pagination d-flex justify-content-center align-items-center mt--130">
+            <li><a *ngIf="!p.isFirstPage()" (click)="p.previous()"><i class="zmdi zmdi-chevron-left"></i></a></li>
+            <li *ngFor="let page of p.pages" [class.active]="p.getCurrent() === page.value">
+              <a (click)="p.setCurrent(page.value)" *ngIf="p.getCurrent() !== page.value">
+                {{ page.label }}
+              </a>
+              <a *ngIf="p.getCurrent() === page.value">
+                {{ page.label }}
+              </a>
+            </li>
+            <li><a *ngIf="!p.isLastPage()" (click)="p.next()"><i class="zmdi zmdi-chevron-right"></i></a></li>
+          </ul>
+        </pagination-template>
+      </div>
+    </div>
+  </div>
+</section>

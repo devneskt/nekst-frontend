@@ -1,0 +1,262 @@
+.accountbox-wrapper {
+  z-index: -9991;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  visibility: hidden;
+}
+.accountbox-wrapper.is-visible {
+  visibility: visible;
+  opacity: 1;
+  z-index: 9991;
+}
+.accountbox-wrapper .body-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -21;
+  height: 100%;
+  width: 100%;
+  background: #15181C;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  cursor: url('/assets/images/icon/close.png'), crosshair;
+}
+.accountbox-wrapper.is-visible .accountbox {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+}
+.accountbox-wrapper.is-visible .body-overlay {
+  opacity: 0.85;
+  visibility: visible;
+  z-index: 21;
+}
+
+.accountbox__filters {
+  padding-bottom: 7px;
+}
+.accountbox__filters li {
+  padding: 0 10px;
+  margin-bottom: 0;
+  position: relative;
+}
+.accountbox__filters li:first-child {
+  padding-left: 0;
+}
+.accountbox__filters li:last-child {
+  padding-right: 0;
+}
+.accountbox__filters li:last-child:before {
+  display: none;
+}
+.accountbox__filters li:before {
+  content: "";
+  height: 3px;
+  width: 10px;
+  background: #222;
+  position: absolute;
+  right: 0;
+  margin-right: -5px;
+  top: 50%;
+}
+.accountbox__filters li a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+.accountbox__filters li a.active {
+  color: #4aa64d; }
+
+.accountbox {
+  background: #e3e3e3;
+  position: absolute;
+  z-index: 23;
+  left: 50%;
+  top: 50%;
+  width: 460px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 70px;
+  padding-right: 120px;
+  -webkit-transform: translate(-50%, -120%);
+  -moz-transform: translate(-50%, -120%);
+  -ms-transform: translate(-50%, -120%);
+  -o-transform: translate(-50%, -120%);
+  transform: translate(-50%, -120%);
+  -webkit-transition: transform 0.5s cubic-bezier(0.38, 0.7, 0.66, 0.82) 0.3s;
+  -moz-transition: transform 0.5s cubic-bezier(0.38, 0.7, 0.66, 0.82) 0.3s;
+  -ms-transition: transform 0.5s cubic-bezier(0.38, 0.7, 0.66, 0.82) 0.3s;
+  -o-transition: transform 0.5s cubic-bezier(0.38, 0.7, 0.66, 0.82) 0.3s;
+  transition: transform 0.5s cubic-bezier(0.38, 0.7, 0.66, 0.82) 0.3s; }
+.accountbox .single-input {
+  margin-top: 25px; }
+.accountbox .single-input input {
+  height: 40px;
+  line-height: 42px;
+  border: 1px solid #aaaaaa;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  width: 100%;
+  padding: 0 30px; }
+.accountbox .single-input input:focus {
+  border-color: #4aa64d; }
+.accountbox .single-input input::placeholder {
+  color: #333 !important;
+  opacity: 1; }
+.accountbox .single-input input::-moz-placeholder {
+  color: #333 !important;
+  opacity: 1; }
+.accountbox .single-input button {
+  padding: 0 35px;
+  border: 0 none; }
+
+.cr-round--lg {
+  border-radius: 100px; }
+
+.social-icons ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+.social-icons ul li a fa-icon {
+  border: 1px solid #6a6a6a;
+  border-radius: 100%;
+  color: #6a6a6a;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  transition: 0.3s; }
+.social-icons ul li a:hover fa-icon {
+  color: #4aa64d; }
+
+.social-icons ul li + li {
+  margin-left: 16px; }
+
+.accountbox-login__others {
+  margin-top: 50px; }
+.accountbox-login__others h6 {
+  color: #898989;
+  font-size: 14px;
+  margin-bottom: 25px; }
+
+.accountbox-close-button {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  color: #333333;
+  position: absolute;
+  right: 4px;
+  top: 6px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
+.accountbox-close-button:hover {
+  opacity: 0.9;
+  color: #4aa64d; }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accountbox-wrapper {
+    overflow-x: hidden;
+    overflow-y: scroll; }
+  .accountbox-wrapper .accountbox {
+    top: 50px; }
+  .accountbox-wrapper .accountbox .accountbox-close-button {
+    left: auto;
+    right: 0; }
+  .accountbox-wrapper.is-visible .accountbox {
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); } }
+@media only screen and (max-width: 767px) {
+  .accountbox-wrapper {
+    overflow-x: hidden;
+    overflow-y: scroll; }
+  .accountbox-wrapper .accountbox {
+    top: 50px;
+    width: calc(100% - 60px);
+    -webkit-transform: translate(-50%, -120%);
+    -moz-transform: translate(-50%, -120%);
+    -ms-transform: translate(-50%, -120%);
+    -o-transform: translate(-50%, -120%);
+    transform: translate(-50%, -120%);
+    left: 50%; }
+  .accountbox-wrapper .accountbox.is-visible {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  .accountbox-wrapper.is-visible .accountbox {
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); } }
+@media only screen and (max-width: 575px) {
+  .accountbox-wrapper {
+    overflow-x: hidden;
+    overflow-y: scroll; }
+  .accountbox-wrapper .accountbox {
+    padding: 45px 30px;
+    padding-right: 30px;
+    top: 50px;
+    width: calc(100% - 60px);
+    -webkit-transform: translate(-50%, -120%);
+    -moz-transform: translate(-50%, -120%);
+    -ms-transform: translate(-50%, -120%);
+    -o-transform: translate(-50%, -120%);
+    transform: translate(-50%, -120%);
+    left: 50%; }
+  .accountbox-wrapper .accountbox.is-visible {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  .accountbox-wrapper.is-visible .accountbox {
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); } }

@@ -1,0 +1,94 @@
+<header class="htc__header bg--white">
+  <!-- Start Mainmenu Area -->
+  <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-sm-4 col-md-6 order-1 order-lg-1">
+          <div class="logo">
+            <a href="#">
+              <img src="assets/images/logo/foody.png" alt="logo images">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-9 col-sm-4 col-md-2 order-3 order-lg-2">
+          <div class="main__menu__wrap">
+            <nav class="main__menu__nav d-none d-lg-block">
+              <ul class="mainmenu">
+                <li><a routerLink="/">Home</a></li>
+                <li><a routerLink="/menu">Menu</a>
+<!--                <li><a routerLink="/gallery">Gallery</a></li>-->
+                <li><a routerLink="/service">Service</a>
+                <li><a href="#">Careers</a>
+<!--                <li><a routerLink="/blog">Blog</a>-->
+                <li><a routerLink="/contact">Contact</a></li>
+                <li><a routerLink="/about">About</a></li>
+<!--                <li class="drop"><a routerLink="/">Home</a>-->
+<!--                  <ul class="dropdown__menu">-->
+<!--                    <li><a routerLink="/">Home Food Delivery</a></li>-->
+<!--                    <li><a href="index-2.html">Home Pizza Delivery</a></li>-->
+<!--                    <li><a href="index-3.html">Home Backery Delivery</a></li>-->
+<!--                    <li><a href="index-4.html">Home Box Layout</a></li>-->
+<!--                  </ul>-->
+<!--                </li>-->
+<!--                <li class="drop"><a href="menu-grid.html">MenuItem</a>-->
+<!--                  <ul class="dropdown__menu">-->
+<!--                    <li><a href="menu-grid.html">MenuItem Grid</a></li>-->
+<!--                    <li><a href="menu-list.html">MenuItem List</a></li>-->
+<!--                    <li><a href="menu-details.html">MenuItem Details</a></li>-->
+<!--                  </ul>-->
+<!--                </li>-->
+<!--                <li class="drop"><a href="blog-list.html">Blog</a>-->
+<!--                  <ul class="dropdown__menu">-->
+<!--                    <li><a href="blog-list.html">Blog List</a></li>-->
+<!--                    <li><a href="blog-mesonry.html">Blog mesonry</a></li>-->
+<!--                    <li><a href="blog-grid-left-sidebar.html">Blog Grid</a></li>-->
+<!--                    <li><a href="blog-list-right-sidebar.html">Blog List with right sidebar</a></li>-->
+<!--                    <li><a href="blog-details.html">Blog Details</a></li>-->
+<!--                  </ul>-->
+<!--                </li>-->
+<!--                <li class="drop"><a href="#">Pages</a>-->
+<!--                  <ul class="dropdown__menu">-->
+<!--                    <li><a href="services.html">Service</a></li>-->
+<!--                    <li><a href="cart.html">Cart Page</a></li>-->
+<!--                    <li><a href="checkout.html">Checkout Page</a></li>-->
+<!--                    <li><a href="contact.html">Contact Page</a></li>-->
+<!--                  </ul>-->
+<!--                </li>-->
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+        <div class="col-lg-1 col-sm-4 col-md-4 order-2 order-lg-3">
+          <div class="header__right d-flex justify-content-end">
+            <div class="log__in">
+              <a class="accountbox-trigger" (click)="openAuthBox($event)"><i class="zmdi zmdi-account-o"></i></a>
+            </div>
+            <div class="shopping__cart">
+              <a class="minicart-trigger" (click)="openCartBox($event)"><i class="zmdi zmdi-shopping-basket"></i></a>
+              <div class="shop__qun">
+                <span>{{itemList.length}}</span>
+              </div>
+            </div>
+              <nav class="main__menu__nav d-none d-lg-block">
+                <ul class="mainmenu">
+                  <li class="drop"><a id="locale"><img class="mr-2" src="assets/images/flag/us.png">USA</a>
+                    <ul class="dropdown__menu">
+                      <li><a><img class="mr-2" src="assets/images/flag/ca.png">Canada</a></li>
+                      <li><a><img class="mr-2" src="assets/images/flag/in.png">India</a></li>
+                      <li><a><img class="mr-2" src="assets/images/flag/gb.png">UK</a></li>
+                      <li><a><img class="mr-2" src="assets/images/flag/au.png">Australia</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile MenuItem -->
+      <div class="mobile-menu d-block d-lg-none"></div>
+      <!-- Mobile MenuItem -->
+    </div>
+  </div>
+  <!-- End Mainmenu Area -->
+</header>

@@ -1,0 +1,90 @@
+<app-bread-crumb [crumbObject]="{title: 'contact us', parentRoute: '/', parentTitle: 'home'}"></app-bread-crumb>
+<!-- Start Contact Map -->
+<div class="contact__map__area">
+  <div class="contact__map__wrapper">
+    <div class="contact__map__left">
+      <div class="map__thumb">
+        <img src="assets/images/banner/contact/1.jpg" alt="images">
+      </div>
+    </div>
+    <div class="contact__map__right">
+      <div class="htc__google__map">
+        <div class="map-contacts">
+          <div id="googlemap"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Contact Map -->
+<!-- Start Address -->
+<div class="food__contact">
+  <div class="food__contact__wrapper d-flex flex-wrap flex-lg-nowrap">
+    <!-- Start Single Contact -->
+    <div class="contact">
+      <div class="ct__icon">
+        <i class="zmdi zmdi-phone"></i>
+      </div>
+      <div class="ct__address">
+        <p><a href="#">+1-408-660-9419</a></p>
+        <p><a href="#">+1-408-660-9419</a></p>
+      </div>
+    </div>
+    <!-- End Single Contact -->
+    <!-- Start Single Contact -->
+    <div class="contact">
+      <div class="ct__icon">
+        <i class="zmdi zmdi-home"></i>
+      </div>
+      <div class="ct__address">
+        <p>10541 Korn Lane, <br> Gilroy, CA-95020, USA</p>
+      </div>
+    </div>
+    <!-- End Single Contact -->
+    <!-- Start Single Contact -->
+    <div class="contact">
+      <div class="ct__icon">
+        <i class="zmdi zmdi-email"></i>
+      </div>
+      <div class="ct__address">
+        <p><a href="#">help@nekstdoor.com</a></p>
+        <p><a href="#">help@nekstdoor.com</a></p>
+      </div>
+    </div>
+    <!-- End Single Contact -->
+  </div>
+</div>
+<!-- End Address -->
+<section class="food__contact__form bg--white section-padding--lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="contact__form__wrap">
+          <h2>Get In Touch With Nekst Door</h2>
+          <div class="contact__form__inner">
+            <form id="contact-form" method="post">
+              <div class="single-contact-form">
+                <div class="contact-box name d-flex flex-wrap flex-md-nowrap flex-lg-nowrap justify-content-between">
+                  <input type="text" name="name" placeholder="Your Name">
+                  <input type="email" name="email" placeholder="E-mail">
+                  <input type="text" name="phone" placeholder="Phone">
+                </div>
+              </div>
+              <div class="single-contact-form">
+                <div class="contact-box message">
+                  <textarea name="message"  placeholder="Message*"></textarea>
+                </div>
+              </div>
+              <div class="contact-btn">
+                <button type="submit" class="food__btn">submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="form-output">
+            <p class="form-messege"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

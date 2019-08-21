@@ -1,0 +1,209 @@
+/*----------------------------------
+	Download App Area
+ -----------------------------------*/
+.inline__image__css--1 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center; }
+
+.app__phone {
+  bottom: -74px;
+  left: -59px;
+  position: absolute; }
+
+.app__download__container .app__download__inner {
+  padding: 212px 56px 212px 0;
+  text-align: right; }
+.app__download__container .app__download__inner h2 {
+  color: #ffffff;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 400; }
+.app__download__container .app__download__inner h6 {
+  color: #ffffff;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 4px; }
+.app__download__container .dwn__app__list {
+  text-align: right; }
+.app__download__container .dwn__app__list li {
+  display: inline-block; }
+.app__download__container .dwn__app__list li:first-child {
+  margin-right: 16px; }
+.app__download__container .dwn__app__list li a {
+  display: block; }
+
+.bg__shape--1 {
+  position: relative; }
+.bg__shape--1::before {
+  background: #f6f6f6 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 470px;
+  left: 0;
+  position: absolute;
+  width: 100%; }
+
+/*----------------------------------
+	Download App Area 02
+ -----------------------------------*/
+.food__stuff__wrap {
+  padding: 100px 0; }
+
+.food__stuff__area {
+  padding: 70px 0; }
+
+.food__sideimg--1 {
+  bottom: 0;
+  height: 100%;
+  left: 17%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.food__sideimg--2 {
+  bottom: 70px;
+  left: 0;
+  position: absolute; }
+
+.food__sideimg--3 {
+  bottom: 70px;
+  position: absolute;
+  right: 0; }
+
+.food__stuff__link li + li {
+  margin-left: 20px; }
+
+.food__stuff__inner h2 {
+  color: #ffffff;
+  font-family: Open Sans;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 47px; }
+
+.food__stuff__inner h3 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 46px;
+  margin-top: 19px; }
+
+.food__stuff__link {
+  margin-top: 29px; }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .food__sideimg--1 {
+    left: 8%;
+    top: 35px;
+    transform: translateY(0%); }
+
+  .food__sideimg--1 img {
+    width: 81%; }
+
+  .food__sideimg--2 img {
+    width: 53%; }
+
+  .food__stuff__inner h2 {
+    font-size: 42px; }
+
+  .app__phone img {
+    width: 82%; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .app__phone {
+    bottom: 37px;
+    left: -51px;
+    position: absolute;
+    width: 52%; }
+
+  .app__download__container .app__download__inner h6 {
+    font-size: 26px; }
+
+  .food__sideimg--1 {
+    display: none; }
+
+  .food__sideimg--2 {
+    left: -54px; }
+
+  .app__phone img {
+    width: 85%; } }
+@media only screen and (max-width: 767px) {
+  .app__phone {
+    bottom: 71px;
+    left: -110px;
+    position: absolute;
+    width: 60%; }
+
+  .food__sideimg--1 {
+    display: none; }
+
+  .single__tab__content + .single__tab__content {
+    margin-top: 110px; }
+
+  .app__phone img {
+    width: 93%; }
+
+  .app__download__container .app__download__inner {
+    padding: 132px 56px 60px 0; }
+
+  .app__download__container .app__download__inner h2,
+  .app__download__container .app__download__inner h6 {
+    color: #000; }
+
+  .app__phone img {
+    display: none; }
+
+  .inline__image__css--1 {
+    background-size: 0 auto; } }
+@media only screen and (max-width: 575px) {
+  .app__phone {
+    display: none; }
+
+  .app__download__container .app__download__inner {
+    padding: 100px 56px 100px 0; }
+
+  .app__download__container .dwn__app__list li {
+    display: block; }
+
+  .app__download__container .dwn__app__list li + li {
+    margin-top: 20px; }
+
+  .food__sideimg--2 {
+    display: none; }
+
+  .food__sideimg--3 {
+    display: none; }
+
+  .food__stuff__link {
+    display: block !important; }
+
+  .food__stuff__link li + li {
+    margin-top: 20px; }
+
+  .food__stuff__inner h2 {
+    font-size: 40px; }
+
+  .food__stuff__inner h3 {
+    font-size: 30px;
+    line-height: 39px; }
+
+  .app__download__container .app__download__inner h6 {
+    font-size: 28px; }
+
+  .app__download__container .app__download__inner h2 {
+    font-size: 31px; }
+
+  .app__download__container .app__download__inner {
+    padding: 65px 16px 60px 0; } }
+
+.locate-me {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+
+  fa-icon {
+    color: #F0A830 ;
+    cursor: pointer;
+  }
+}
